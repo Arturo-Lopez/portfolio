@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  --text-color: hsl(0, 0%, 20%);
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Inter var', sans-serif;
+  background: white;
+  color: var(--text-color);
+  user-select: none;
+  cursor: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxMCIgZmlsbD0id2hpdGUiLz48L3N2Zz4='),
+    auto;
+}
+
+.content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  min-height: 50vh;
+  background: hsla(0, 0%, 70%, 0.1);
+  backdrop-filter: blur(2px);
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2 {
+  font-family: 'Oswald', 'Inter', sans-serif;
+}
+
+h1 {
+  --border-color: hsla(0, 0%, 50%, 1);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: white;
+
+  font-size: 25vw;
+  line-height: 1.25em;
+  transform: rotate(12deg);
+  text-transform: uppercase;
+  text-shadow: 4px 0 var(--border-color), -4px 0 var(--border-color), 0 4px var(--border-color), 0 -4px var(--border-color), 2px 2px var(--border-color),
+    -2px -2px var(--border-color), 2px -2px var(--border-color), -2px 2px var(--border-color);
+}
+
+h2 {
+  margin: 1em 0;
+  font-size: 2rem;
+}
+
+p {
+  margin: 0 0 2em;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+button {
+  background: transparent;
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.5rem 1.25rem;
+}
