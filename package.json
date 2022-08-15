@@ -4,6 +4,7 @@
   "description": "Personal portfolio",
   "keywords": [],
   "main": "src/index.js",
+  "license": "MIT",
   "dependencies": {
     "@react-three/drei": "7.22.0",
     "@react-three/fiber": "7.0.19",
@@ -20,5 +21,10 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
